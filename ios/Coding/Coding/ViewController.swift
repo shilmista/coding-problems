@@ -23,6 +23,7 @@ class ViewController: UIViewController, ListViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "coding problems"
     }
     
     override func loadView() {
@@ -31,8 +32,9 @@ class ViewController: UIViewController, ListViewDelegate {
     
     // MARK: - ListViewDelegate
     func didSelectViewController(viewController: CodingViewController) {
-        if let controllerClass = classFromString(viewController.rawValue) {
-            print(controllerClass)
+        if let controllerClass = classFromString(viewController.rawValue) as? UIViewController.Type {
+            let newController = controllerClass.init()
+            navigationController?.pushViewController(newController, animated: true)
         } else {
             print("class for \(viewController.rawValue) was not found")
         }
@@ -40,6 +42,13 @@ class ViewController: UIViewController, ListViewDelegate {
 
 }
 
-func classFromString(_ name: String) -> AnyClass? {
-    return Bundle.main.classNamed(name)
+func classFromString(_ className: String) -> AnyClass? {
+    /// get namespace
+    if let namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String {
+        /// get 'anyClass' with classname and namespace
+        let cls: AnyClass? = NSClassFromString("\(namespace).\(className)");
+        
+        return cls;
+    }
+    return nil
 }
