@@ -10,6 +10,7 @@
 
 
 def test(array):
+    '''this is just 2n, or n because it has two passes over the array'''
     product = 1
     new_array = []
     for num in array:
@@ -21,6 +22,7 @@ def test(array):
 
 
 def test_no_division(array):
+    '''This is n squared time because of the nested for loops'''
     new_array = []
     for index in range(len(array)):
         product = 1
