@@ -19,10 +19,23 @@ class FibonacciViewController: UIViewController {
         super.viewDidLoad()
         
         title = "fibonacci"
+        
+        self.fib(n: 20)
     }
     
     override func loadView() {
         view = fibView
     }
     
+    func fib(n: Int) {
+        // Write Fibonacci to N
+        var current = 1
+        var historical = 0
+        (0...n).forEach { fibIndex in
+            let next = current + historical
+            print(next)
+            historical = current
+            current = next
+        }
+    }
 }
