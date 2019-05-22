@@ -10,12 +10,19 @@ import Foundation
 import UIKit
 
 class FibonacciViewController: UIViewController {
+    lazy var fibView: FibonacciView = {
+        let view = FibonacciView()
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
         title = "fibonacci"
+    }
+    
+    override func loadView() {
+        view = fibView
     }
     
 }

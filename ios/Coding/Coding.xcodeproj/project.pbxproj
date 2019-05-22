@@ -13,6 +13,7 @@
 		AB66FAD12295A1B700E19A51 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66FAD02295A1B700E19A51 /* ListView.swift */; };
 		AB66FAD32295A2B000E19A51 /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66FAD22295A2B000E19A51 /* FibonacciViewController.swift */; };
 		AB66FAD52295A5BD00E19A51 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66FAD42295A5BD00E19A51 /* ListCell.swift */; };
+		AB66FAD72295AA0E00E19A51 /* FibonacciView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB66FAD62295AA0E00E19A51 /* FibonacciView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB66FAD02295A1B700E19A51 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		AB66FAD22295A2B000E19A51 /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
 		AB66FAD42295A5BD00E19A51 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		AB66FAD62295AA0E00E19A51 /* FibonacciView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				AB66FAD22295A2B000E19A51 /* FibonacciViewController.swift */,
+				AB66FAD62295AA0E00E19A51 /* FibonacciView.swift */,
 			);
 			path = fibonacci;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB66FAC02295A17900E19A51 /* ViewController.swift in Sources */,
+				AB66FAD72295AA0E00E19A51 /* FibonacciView.swift in Sources */,
 				AB66FAD32295A2B000E19A51 /* FibonacciViewController.swift in Sources */,
 				AB66FABE2295A17900E19A51 /* AppDelegate.swift in Sources */,
 				AB66FAD52295A5BD00E19A51 /* ListCell.swift in Sources */,
