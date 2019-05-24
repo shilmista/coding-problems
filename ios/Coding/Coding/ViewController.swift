@@ -10,6 +10,7 @@ import UIKit
 
 enum CodingViewController: String, CaseIterable {
     case FibonacciViewController
+    case NodeSerializeViewController
 }
 
 class ViewController: UIViewController, ListViewDelegate {
